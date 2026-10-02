@@ -1,1 +1,602 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Foundation Program | Equation India</title>
+
+    <meta name="description"
+          content="Build strong academic fundamentals with Equation India's Foundation Program for Classes 5 to 10. Explore concept-based learning and competitive exam preparation.">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/landing.css">
+
+    <style>
+        .foundation-hero {
+            padding: 85px 0;
+            background: linear-gradient(135deg, #faf7fb, #ffffff);
+        }
+
+        .foundation-hero-grid {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            align-items: center;
+            gap: 55px;
+        }
+
+        .foundation-hero h1 {
+            color: #241027;
+            font-size: clamp(36px, 4.5vw, 58px);
+            line-height: 1.12;
+            margin: 18px 0;
+        }
+
+        .foundation-hero h1 span {
+            color: #8f1299;
+        }
+
+        .foundation-hero p {
+            color: #6d6670;
+            line-height: 1.8;
+            font-size: 17px;
+        }
+
+        .foundation-tag {
+            display: inline-block;
+            padding: 9px 15px;
+            border-radius: 30px;
+            background: #f2e5f5;
+            color: #8f1299;
+            font-size: 13px;
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+
+        .foundation-visual {
+            background: #ffffff;
+            padding: 35px;
+            border: 1px solid #eee3f0;
+            border-radius: 24px;
+            box-shadow: 0 20px 55px rgba(36,16,39,0.08);
+        }
+
+        .foundation-visual .visual-label {
+            color: #8f1299;
+            font-weight: 800;
+            font-size: 13px;
+            letter-spacing: 1.5px;
+        }
+
+        .foundation-visual h2 {
+            font-size: 30px;
+            line-height: 1.3;
+            color: #241027;
+            margin: 15px 0;
+        }
+
+        .foundation-visual ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0 0;
+        }
+
+        .foundation-visual li {
+            padding: 12px 0;
+            border-bottom: 1px solid #eee6ef;
+            color: #514853;
+        }
+
+        .foundation-visual li:last-child {
+            border-bottom: none;
+        }
+
+        .foundation-visual li span {
+            color: #8f1299;
+            font-weight: 800;
+            margin-right: 10px;
+        }
+
+        .foundation-programs {
+            padding: 85px 0;
+            background: #faf7fb;
+        }
+
+        .foundation-card-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 22px;
+            margin-top: 40px;
+        }
+
+        .foundation-card {
+            padding: 30px;
+            border: 1px solid #eee3f0;
+            border-radius: 18px;
+            background: #ffffff;
+            transition: 0.25s ease;
+        }
+
+        .foundation-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 14px 30px rgba(143,18,153,0.10);
+        }
+
+        .foundation-card .card-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 42px;
+            height: 42px;
+            border-radius: 12px;
+            background: #f5e8f7;
+            color: #8f1299;
+            font-weight: 800;
+            margin-bottom: 18px;
+        }
+
+        .foundation-card h3 {
+            color: #241027;
+            margin: 0 0 10px;
+            font-size: 21px;
+        }
+
+        .foundation-card p {
+            color: #6d6670;
+            line-height: 1.75;
+            margin: 0;
+        }
+
+        .foundation-cta {
+            padding: 75px 0;
+            background: #241027;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .foundation-cta h2 {
+            font-size: clamp(28px, 4vw, 42px);
+            margin: 0 0 15px;
+        }
+
+        .foundation-cta p {
+            max-width: 650px;
+            margin: 0 auto 28px;
+            color: #e5dce8;
+            line-height: 1.8;
+        }
+
+        .foundation-cta .eyebrow {
+            color: #e7a5ed;
+        }
+
+        .foundation-form-section {
+            padding: 85px 0;
+            background: #ffffff;
+        }
+
+        .foundation-form-grid {
+            display: grid;
+            grid-template-columns: 1fr 0.9fr;
+            gap: 55px;
+            align-items: center;
+        }
+
+        .foundation-form-copy h2 {
+            color: #241027;
+            font-size: clamp(28px, 3vw, 40px);
+            line-height: 1.2;
+        }
+
+        .foundation-form-copy p {
+            color: #6d6670;
+            line-height: 1.8;
+        }
+
+        .foundation-form {
+            background: #faf7fb;
+            border: 1px solid #eee3f0;
+            border-radius: 20px;
+            padding: 30px;
+        }
+
+        .foundation-form .form-group {
+            margin-bottom: 18px;
+        }
+
+        .foundation-form label {
+            display: block;
+            margin-bottom: 8px;
+            color: #241027;
+            font-weight: 700;
+        }
+
+        .foundation-form input,
+        .foundation-form select {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 13px 14px;
+            border: 1px solid #ded4e0;
+            border-radius: 10px;
+            background: #ffffff;
+            font: inherit;
+        }
+
+        .foundation-form input:focus,
+        .foundation-form select:focus {
+            outline: 2px solid #dcb5e1;
+            border-color: #8f1299;
+        }
+
+        .foundation-submit {
+            width: 100%;
+            border: none;
+            border-radius: 10px;
+            padding: 15px;
+            background: #8f1299;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 800;
+            cursor: pointer;
+        }
+
+        .foundation-submit:hover {
+            background: #741080;
+        }
+
+        .foundation-form .form-note {
+            font-size: 12px;
+            line-height: 1.6;
+            color: #6d6670;
+            margin: 14px 0 0;
+        }
+
+        @media (max-width: 760px) {
+            .foundation-hero {
+                padding: 55px 0;
+            }
+
+            .foundation-hero-grid,
+            .foundation-form-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .foundation-visual {
+                padding: 25px;
+            }
+
+            .foundation-programs,
+            .foundation-form-section {
+                padding: 60px 0;
+            }
+
+            .foundation-card-grid {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+
+            .foundation-card {
+                padding: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container nav">
+        <a href="../index.html" class="logo">
+            <img src="../images/equation-logo.png" alt="Equation India">
+        </a>
+
+        <nav class="desktop-nav">
+            <a href="../index.html#programs">Programs</a>
+            <a href="../index.html#about">About</a>
+            <a href="#foundation-program">Foundation</a>
+            <a href="#foundation-contact">Contact</a>
+        </nav>
+
+        <a href="https://wa.me/919926008447?text=Hello%20Equation%20India%2C%20I%20want%20to%20know%20about%20the%20Foundation%20Program."
+           class="nav-button"
+           target="_blank"
+           rel="noopener noreferrer">
+            Enquire Now
+        </a>
+    </div>
+</header>
+
+<main>
+
+    <!-- HERO SECTION -->
+
+    <section class="foundation-hero">
+        <div class="container foundation-hero-grid">
+
+            <div>
+                <span class="foundation-tag">
+                    FOUNDATION PROGRAM | CLASSES 5–10
+                </span>
+
+                <h1>
+                    Strong Concepts Today.
+                    <span>Confident Futures Tomorrow.</span>
+                </h1>
+
+                <p>
+                    Help students build strong academic fundamentals,
+                    develop problem-solving skills and prepare for
+                    future competitive examinations through concept-based learning.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#foundation-contact" class="btn-primary">
+                        Enquire for Foundation
+                    </a>
+
+                    <a href="#foundation-program" class="btn-secondary">
+                        Explore Program
+                    </a>
+                </div>
+            </div>
+
+            <div class="foundation-visual">
+                <span class="visual-label">BUILD THE FOUNDATION</span>
+
+                <h2>
+                    Learning That Goes Beyond Textbooks
+                </h2>
+
+                <p>
+                    Focus on understanding concepts, practising
+                    regularly and developing a consistent study routine.
+                </p>
+
+                <ul>
+                    <li><span>✓</span> Concept-Based Learning</li>
+                    <li><span>✓</span> Olympiad Preparation Guidance</li>
+                    <li><span>✓</span> Regular Worksheets & Tests</li>
+                    <li><span>✓</span> Doubt-Solving Support</li>
+                    <li><span>✓</span> Parent Progress Updates</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PROGRAM FEATURES -->
+
+    <section class="foundation-programs" id="foundation-program">
+        <div class="container">
+
+            <div class="section-heading">
+                <span class="eyebrow">OUR FOUNDATION APPROACH</span>
+
+                <h2>
+                    Build Skills That Support Long-Term Learning
+                </h2>
+
+                <p>
+                    A learning approach that helps students strengthen
+                    fundamentals before moving towards more advanced concepts.
+                </p>
+            </div>
+
+            <div class="foundation-card-grid">
+
+                <article class="foundation-card">
+                    <span class="card-number">01</span>
+                    <h3>Concept Clarity</h3>
+                    <p>
+                        Strengthen core Mathematics and Science concepts
+                        through clear explanations and structured practice.
+                    </p>
+                </article>
+
+                <article class="foundation-card">
+                    <span class="card-number">02</span>
+                    <h3>Olympiad Guidance</h3>
+                    <p>
+                        Develop logical thinking and problem-solving skills
+                        through suitable enrichment and competitive-style questions.
+                    </p>
+                </article>
+
+                <article class="foundation-card">
+                    <span class="card-number">03</span>
+                    <h3>Worksheets & Assessments</h3>
+                    <p>
+                        Reinforce learning with practice worksheets,
+                        regular assessments and revision activities.
+                    </p>
+                </article>
+
+                <article class="foundation-card">
+                    <span class="card-number">04</span>
+                    <h3>Doubt Support & Mentorship</h3>
+                    <p>
+                        Give students opportunities to clarify doubts,
+                        identify learning gaps and build consistent study habits.
+                    </p>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CALL TO ACTION -->
+
+    <section class="foundation-cta">
+        <div class="container">
+            <span class="eyebrow">START WITH STRONG FUNDAMENTALS</span>
+
+            <h2>
+                Every Big Goal Begins With a Strong Foundation.
+            </h2>
+
+            <p>
+                Connect with Equation India to learn about the
+                available Foundation Program options for Classes 5–10.
+            </p>
+
+            <a href="https://wa.me/919926008447?text=Hello%20Equation%20India%2C%20please%20share%20Foundation%20Program%20details%20for%20Classes%205%20to%2010."
+               class="btn-primary"
+               target="_blank"
+               rel="noopener noreferrer">
+                Get Program Details on WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <!-- ENQUIRY FORM -->
+
+    <section class="foundation-form-section" id="foundation-contact">
+        <div class="container foundation-form-grid">
+
+            <div class="foundation-form-copy">
+                <span class="eyebrow">ADMISSIONS ENQUIRY</span>
+
+                <h2>
+                    Find the Right Foundation Program for Your Child
+                </h2>
+
+                <p>
+                    Share your details to enquire about available
+                    classes, batches, fees and the admission process.
+                </p>
+
+                <p>
+                    <strong>Equation India</strong><br>
+                    Indore | Satna
+                </p>
+
+                <p>
+                    Call: +91 99260 02887<br>
+                    WhatsApp: +91 99260 08447
+                </p>
+            </div>
+
+            <div class="foundation-form">
+                <form id="foundationEnquiryForm">
+
+                    <div class="form-group">
+                        <label for="foundationParentName">
+                            Parent / Student Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="foundationParentName"
+                            name="name"
+                            placeholder="Enter your name"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="foundationClass">
+                            Student's Class
+                        </label>
+
+                        <select id="foundationClass" name="class" required>
+                            <option value="">Select Class</option>
+                            <option value="Class 5">Class 5</option>
+                            <option value="Class 6">Class 6</option>
+                            <option value="Class 7">Class 7</option>
+                            <option value="Class 8">Class 8</option>
+                            <option value="Class 9">Class 9</option>
+                            <option value="Class 10">Class 10</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="foundationPhone">
+                            WhatsApp Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="foundationPhone"
+                            name="phone"
+                            placeholder="Enter 10-digit mobile number"
+                            pattern="[6-9][0-9]{9}"
+                            maxlength="10"
+                            inputmode="numeric"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="foundationMode">
+                            Preferred Learning Mode
+                        </label>
+
+                        <select id="foundationMode" name="mode" required>
+                            <option value="">Select Mode</option>
+                            <option value="Offline">Offline</option>
+                            <option value="Online">Online</option>
+                            <option value="Need Guidance">Need Guidance</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="foundation-submit">
+                        Get Foundation Details →
+                    </button>
+
+                    <p class="form-note">
+                        Clicking the button opens WhatsApp with your
+                        enquiry details. Your message will not be sent
+                        until you press Send in WhatsApp.
+                    </p>
+
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <p>© 2026 Equation India. All rights reserved.</p>
+        <p>Indore | Satna</p>
+        <p>+91 99260 02887 | +91 99260 08447</p>
+    </div>
+</footer>
+
+<a href="https://wa.me/919926008447?text=Hello%20Equation%20India%2C%20I%20want%20to%20know%20about%20the%20Foundation%20Program."
+   class="whatsapp-float"
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="Chat with Equation India on WhatsApp">
+    WA
+</a>
+
+<script src="../js/script.js"></script>
+
+<script>
+document.getElementById("foundationEnquiryForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const name = document.getElementById("foundationParentName").value.trim();
+    const studentClass = document.getElementById("foundationClass").value;
+    const phone = document.getElementById("foundationPhone").value.trim();
+    const mode = document.getElementById("foundationMode").value;
+
+    const message =
+        "Hello Equation India,%0A%0A" +
+        "I want information about the Foundation Program.%0A%0A" +
+        "Parent / Student Name: " + encodeURIComponent(name) + "%0A" +
+        "Class: " + encodeURIComponent(studentClass) + "%0A" +
+        "WhatsApp Number: " + encodeURIComponent(phone) + "%0A" +
+        "Preferred Mode: " + encodeURIComponent(mode);
+
+    const whatsappURL = "https://wa.me/919926008447?text=" + message;
+
+    window.open(whatsappURL, "_blank");
+});
+</script>
+
+</body>
+</html>
