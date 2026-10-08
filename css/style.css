@@ -45,6 +45,7 @@ a {
 
 img {
     max-width: 100%;
+    height: auto;
     display: block;
 }
 
@@ -783,10 +784,10 @@ footer {
         padding: 65px 0;
     }
 
-    .hero h1 {
-        font-size: 43px;
-        letter-spacing: -1.5px;
-    }
+  .hero h1 {
+        font-size: clamp(36px, 10vw, 43px);
+          letter-spacing: -1.5px;
+   }
 
     .hero-content > p {
         font-size: 16px;
@@ -1126,7 +1127,9 @@ footer {
     .app-device-card {
         width: 205px;
         height: 370px;
+    }
 }
+
 .app-logo-mark {
     width: 120px;
     height: auto;
@@ -1190,4 +1193,13 @@ footer {
     .app-device-screen strong {
         font-size: 16px;
     }
+}
+
+@media (max-width: 700px) {
+
+    .hero-image,
+    .hero-image img {
+        min-height: 320px;
+    }
+
 }
