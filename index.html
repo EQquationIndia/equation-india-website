@@ -50,29 +50,57 @@
 
     <!-- Structured Data -->
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "@id": "https://equation-india-website.netlify.app/#organization",
+  "name": "Equation India",
+  "url": "https://equation-india-website.netlify.app/",
+  "logo": "https://equation-india-website.netlify.app/images/equation-logo.png",
+  "description": "Equation India provides JEE, NEET and Foundation coaching in Indore and Satna with concept-focused learning, experienced faculty, regular tests and student support.",
+  "foundingDate": "2016",
+  "telephone": [
+    "+91-9926002887",
+    "+91-9926008447"
+  ],
+  "areaServed": [
     {
-        "@context": "https://schema.org",
-        "@type": "EducationalOrganization",
-        "name": "Equation India",
-        "url": "https://equation-india-website.netlify.app/",
-        "logo": "https://equation-india-website.netlify.app/images/equation-logo.png",
-        "description": "Equation India provides JEE, NEET and Foundation coaching with concept-focused learning, experienced faculty, regular tests and student support.",
-        "areaServed": [
-            {
-                "@type": "City",
-                "name": "Indore"
-            },
-            {
-                "@type": "City",
-                "name": "Satna"
-            }
-        ],
-        "telephone": [
-            "+91-9926002887",
-            "+91-9926008447"
-        ]
+      "@type": "City",
+      "name": "Indore"
+    },
+    {
+      "@type": "City",
+      "name": "Satna"
     }
-    </script>
+  ],
+  "location": [
+    {
+      "@type": "Place",
+      "name": "Equation India - Indore",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Campus 01, U.V. House, near Jaal Sabhagrah, South Tukoganj",
+        "addressLocality": "Indore",
+        "addressRegion": "Madhya Pradesh",
+        "postalCode": "452001",
+        "addressCountry": "IN"
+      }
+    },
+    {
+      "@type": "Place",
+      "name": "Equation India - Satna",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "MIG-15, near Deen Dayal Park / BJP office, Bharhut Nagar",
+        "addressLocality": "Satna",
+        "addressRegion": "Madhya Pradesh",
+        "postalCode": "485001",
+        "addressCountry": "IN"
+      }
+    }
+  ]
+}
+</script>
 
     <link rel="stylesheet" href="css/style.css">
 
